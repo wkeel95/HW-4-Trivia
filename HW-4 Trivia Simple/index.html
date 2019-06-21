@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Science Trivia Time!</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:900|Roboto+Condensed&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="titlebox">
+        <h1>Science is cool!</h1>
+        <h5>You have 60 seconds to answer five quick science questions. <br> Press the 'Go!' button to start. </h5>
+        <button id="go" type="button" class="btn btn-success">Go!</button>
+        <div id="timer">60</div>
+    </div>
+    <div id="mainbox">
+        <div class="question" id="question1">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Question 1:</h5>
+                            <p class="card-text">What is the term for the speed that a rocket needs to be traveling to break free of Earth’s gravity?</p>
+                            <div class="btn-group-vertical" role="group" aria-label="Basic example">
+                                <div class="form-check form-check-inline">
+                                    <!-- note: the radio button names have to be the same in order to ensure only 
+                                        one can be chosen at a time. However, the way that the functions are checking 
+                                        if the answer is correct is by the names being different. Not sure how to get 
+                                        around this issue. The way it's written, the player can choose one correct 
+                                        and one incorrect answer per question.-->
+                                    <input class="form-check-input" type="radio" name="1f"
+                                        id="inlineRadio1" value="1f">
+                                    <label class="form-check-label" for="inlineRadio1">Terminal Velocity</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="1t"
+                                        id="inlineRadio2" value="1t">
+                                    <label class="form-check-label" for="inlineRadio2">Escape Velocity</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="1f"
+                                        id="inlineRadio3" value="1f">
+                                    <label class="form-check-label" for="inlineRadio2">Kinetic Velocity</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="1f"
+                                        id="inlineRadio4" value="1f">
+                                    <label class="form-check-label" for="inlineRadio2">Instant Velocity</label>
+                                </div>
+                                <br>
+                                <button id="next1" type="button" class="btn btn-success">Next</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                        <div id=imgbox><img src="https://media.giphy.com/media/kjjRGpezebjaw/giphy.gif" alt="rocket"></div>
+                    </div>
+            </div>
+        </div>
+        <div class="question" id="question2">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Question 2:</h5>
+                            <p class="card-text">What is the primary unit of temperature measurement in the physical sciences?</p>
+                            <div class="btn-group-vertical" role="group" aria-label="Basic example">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="2f"
+                                        id="inlineRadio1" value="option1">
+                                    <label class="form-check-label" for="inlineRadio1">Farenheit</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="2f"
+                                        id="inlineRadio2" value="option2">
+                                    <label class="form-check-label" for="inlineRadio2">Celsius</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="2t"
+                                        id="inlineRadio3" value="option3">
+                                    <label class="form-check-label" for="inlineRadio2">Kelvin</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="2f"
+                                        id="inlineRadio4" value="option4">
+                                    <label class="form-check-label" for="inlineRadio2">Newtons</label>
+                                </div>
+                                <br>
+                                <button id="next2" type="button" class="btn btn-success">Next</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                        <div id=imgbox><img src="https://media.giphy.com/media/dh2XvZthDl7ag/giphy.gif" alt="fire"></div>
+                    </div>
+            </div>
+        </div>
+        <div class="question" id="question3">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Question 3:</h5>
+                            <p class="card-text">What is the only modern rock n’ roll song on the Voyager Spacecrafts’ Golden Records?</p>
+                            <div class="btn-group-vertical" role="group" aria-label="Basic example">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="3t"
+                                        id="inlineRadio1" value="option1">
+                                    <label class="form-check-label" for="inlineRadio1">Johnny B. Goode - Chuck
+                                        Berry</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="3f"
+                                        id="inlineRadio2" value="option2">
+                                    <label class="form-check-label" for="inlineRadio2">Rocketman - Elton John</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="3f"
+                                        id="inlineRadio2" value="option3">
+                                    <label class="form-check-label" for="inlineRadio3">Imagine - John Lennon</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="3f"
+                                        id="inlineRadio2" value="option4">
+                                    <label class="form-check-label" for="inlineRadio4">Hey Jude - The Beatles</label>
+                                </div>
+                                <br>
+                                <button id="next3" type="button" class="btn btn-success">Next</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                        <div id=imgbox><img src="https://media.giphy.com/media/xrZuNcEAmTb6U/giphy.gif" alt="rock cat"></div>
+                    </div>
+            </div>
+        </div>
+        <div class="question" id="question4">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Question 4:</h5>
+                            <p class="card-text">The red supergiant star Betelgeuse belongs to which constellation?</p>
+                            <div class="btn-group-vertical" role="group" aria-label="Basic example">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="4f"
+                                        id="inlineRadio1" value="option1">
+                                    <label class="form-check-label" for="inlineRadio1">Gemini</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="4f"
+                                        id="inlineRadio2" value="option2">
+                                    <label class="form-check-label" for="inlineRadio2">Cancer</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="4f"
+                                        id="inlineRadio2" value="option3">
+                                    <label class="form-check-label" for="inlineRadio3">Capricornus</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="4t"
+                                        id="inlineRadio2" value="option4">
+                                    <label class="form-check-label" for="inlineRadio4">Orion</label>
+                                </div>
+                                <br>
+                                <button id="next4" type="button" class="btn btn-success">Next</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                        <div id=imgbox><img src="https://media.giphy.com/media/3o7TKHzhNbSSRl7OGk/giphy.gif" alt="sun"></div>
+                    </div>
+            </div>
+        </div>
+        <div class="question" id="question5">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Question 5:</h5>
+                            <p class="card-text">In the human body, what is the hallux?</p>
+                            <div class="btn-group-vertical" role="group" aria-label="Basic example">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="5f"
+                                        id="inlineRadio1" value="option1">
+                                    <label class="form-check-label" for="inlineRadio1">The protective membrane around the brain</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="5f"
+                                        id="inlineRadio2" value="option2">
+                                    <label class="form-check-label" for="inlineRadio2">The outside of the elbow</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="5f"
+                                        id="inlineRadio2" value="option3">
+                                    <label class="form-check-label" for="inlineRadio3">The part between the
+                                        nostrils</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="5t"
+                                        id="inlineRadio2" value="option4">
+                                    <label class="form-check-label" for="inlineRadio4">The big toe</label>
+                                </div>
+                                <br>
+                                <button id="finish" type="button" class="btn btn-success">Finish</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div id=imgbox><img src="https://media.giphy.com/media/C5gocDBDRdJ6g/giphy.gif" alt="body"></div>
+                </div>
+            </div>
+        </div>
+        <div id="endcard">
+            <div id="numright"></div>
+            <button id="playagain" type="button" class="btn btn-success">Play again!</button>
+            <br>
+            <div id=imgbox><img src="https://media.giphy.com/media/xTiN0NZZsYXkGwbcJ2/giphy.gif" alt="bill"></div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="assets/game.js"></script>
+
+</body>
+
+</html>

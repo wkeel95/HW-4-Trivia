@@ -1,0 +1,43 @@
+
+
+.titlebox {
+    margin: auto;
+    width: 800px;
+    margin-top: 60px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+.mainbox {
+    width:960px;
+    margin: auto;
+}
+#next1 {
+    width:200px;
+}
+#next2 {
+    width:200px;
+}
+#next3 {
+    width:200px;
+}
+#next4 {
+    width:200px;
+}
+#next5 {
+    width:200px;
+}
+#finish {
+    width:200px;
+}
+.question {
+    margin-left: 30px;
+    margin-top: 20px;
+}
+#endcard {
+    margin-left: 30px;
+    margin-top: 20px;
+}
+#imgbox {
+    margin-right: 30px;
+}
+
